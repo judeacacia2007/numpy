@@ -1,6 +1,6 @@
-import numpy
+import numpy as np
 np.random.seed(42)
-np.random.randint(500, 2000, size=(5, 7))
+sales = np.random.randint(500, 2000, size=(5, 7))
 print("sales dataset")
 print(sales)
 
@@ -31,6 +31,10 @@ print("Best Performing Store :", best_store + 1)
 print("Worst Performing Store :", worst_store + 1)
 best_month = np.argmax(month_total)
 worst_month = np.argmin(month_total)
+
+months = ["Jan","Feb","Mar","Apr","May","Jun",
+          "Jul","Aug","Sep","Oct","Nov","Dec"]
+
 print("Best Performing Month :", months[best_month])
 print("Worst Performing Month :", months[worst_month])
 
